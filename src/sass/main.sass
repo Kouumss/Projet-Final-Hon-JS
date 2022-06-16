@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap')
+@import './_variables'
+@import '../../node_modules/bootstrap/scss/_functions.scss'
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
+
+*
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+.modeMoon
+    background-color: #011122
+    color: white
+    section
+        &:nth-of-type(1)
+            background-color: #031629
+            color: white
+            .WomenWord
+                p
+                    color: black
+        &:nth-of-type(2)
+            .AboutCompany
+                color: white
+        &:nth-of-type(3)
+            color: white
+            background-color: #031629
+        &:nth-of-type(5)
+            background-color: #031629
+            .maCardCarou
+                color: black
+                background-color: #022f5c
+                card
+                color: white
+                background-color: #031629
+        &:nth-of-type(7)
+            .mesAdresses
+                color: white
+                background-color: #022f5c
+        footer
+            background-color: #022f5c
+            .bgfoot
+                background-color: #031629
+
+body
+    margin: 0
+    width: 100%
+    box-sizing: border-box
+    
+
+header
+
+    .navbar
+        background-color: rgb(245,235,223)
+        border-bottom: 1px solid #d3cfcf
+        position: fixed
+        z-index: 20
+        width: 100%
+
+        .navtab
+            a
+                border: none
+                color: black
+                text-decoration: none
+                background-color: transparent
+
+                &:hover
+                    border-bottom: 1px solid black
+
+    .maNavProfil
+        button
+            border: none
+            background-color: transparent
+
+
+
+
+section
+    &:nth-of-type(1)
+        width: 100%
+        background-color: rgb(245,235,223)
+
+        .s1navbarGauche
+            p
+                writing-mode: vertical-rl
+                text-orientation: mixed
+        .s1Imaginaire
+            img
+                width: 100%
+        .s1ContenuSac
+            h1
+                font-size: 40px
+                font-weight: bold
+            button
+                border: none
+                color: white
+                background-color: #123
+        .WomenWord
+            font-size: 200px
+            color: white
+            position: absolute
+            overflow: hidden
+            top: 48%
+            left: 20%
+            width: max-content
+
+    &:nth-of-type(2)
+        width: 100%
+        button
+            color: #b4b4b4
+            z-index: 2
+            background-color: transparent
+            border: none
+        .monTrait
+            height: 30px
+            width: 1px
+            background-color: #b4b4b4
+        .maCollection
+            margin: 0
+            width: 100%
+        #AboutCompanyH4
+            text-align: mixed
+        .AboutCompany
+            font-family: "Poppins Light"
+    &:nth-of-type(3)
+        width: 100%
+        background-color: rgb(245,235,223)
+        button
+            background-color: black
+            color: white
+            border: none
+            width: max-content
+    &:nth-of-type(5)
+        width: 100%
+        background-color: rgb(245,235,223)
+        img
+            border: 0
+            border-radius: 50%
+            width: 70px
+        .itemCarouCacher
+            overflow: hidden
+            max-width: 420px !important
+            display: flex
+            justify-content: center
+            flex-direction: row
+        .maCardCarou
+            transition-duration: 1s
+            flex: 0 0 auto
+            width: 420px
+        .divCarouBtn
+            position: relative
+            #btnCarouselBefore
+                position: absolute
+                bottom: 230px
+                right: 500px
+                background-color: #000000ac
+                i
+                    color: #ffffff
+            #btnCarouselAfter
+                position: absolute
+                bottom: 230px
+                left: 500px
+                background-color: #000000ac
+                i
+                    color: #ffffff
+        .carousel-inner
+            .divTestiImg
+                img
+                    border-radius: 50%
+                    width: 20%
+            .divFormeMsg
+                background-color: #fffffff5
+                align-content: center
+                .formeMsg
+                    height: 10px
+                    width: 10px
+                    background-color: red
+                    transform: rotate(45deg)
+                    left: 50px
+    &:nth-of-type(6)
+        width: 100%
+        button
+            background-color: #123
+            color: white
+            border: 0
+            width: max-content
+    &:nth-of-type(7)
+        width: 100%
+        .contactGauche
+            background-image: url('../../public/img/collect/one-page-img-04.jpg')
+            background-size: cover
+            background-position: bottom
+        .contactLoc
+            background-color: rgb(245,235,223)
+        .contactForum
+            background-image: url('../../public/img/fashion/fashion-brand-parallax-bg.jpg')
+            background-size: cover
+            .form-group
+                border-bottom: 1px solid #a0a4a8a2
+                input
+                    background-color: transparent
+                    border: 0
+            form
+                button
+                    border: 0
+                    width: max-content
+footer
+    width: 100%
+    color: #c9c6c6
+    background-color: #252525e7
+    .MesColSpeciales
+        h6
+            font-size: 10px
+    input
+        background-color: #5e5e5ed7
+        border: 0
+        width: max-content
+    .bgFoot
+        background-color: #1b1b1b
+        color: #959999
+
+@media screen and (min-width: 320px) and (max-width: 767px)
+    section
+        &:nth-of-type(1)
+            .WomenWord
+                p
+                    width: 100px
+        &:nth-of-type(2)
+            .maCollection
+                img
+                    margin-top: 20px
+            .maSection2Intro
+                display: flex
+                flex-wrap: wrap
+        &:nth-of-type(3)
+            .FashionBrandText
+                margin-top: 40px
+        &:nth-of-type(5)
+            .spcialP
+                width: 100px
+            .divCarouBtn
+                position: relative
+            #btnCarouselBefore
+                position: absolute
+                bottom: 0px
+                right: 0px
+                background-color: rgb(245,235,223)
+                i
+                    color: black
+            #btnCarouselAfter
+                position: absolute
+                bottom: 0px
+                left: 0px
+                background-color: rgb(245,235,223)
+                i
+                    color: black
+    footer
+        .rowImgFoot1
+            flex-wrap: wrap
+        .rowImgFoot2
+            flex-wrap: wrap
+        .divMedia
+            p
+                width: 10px
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+    section
+        &:nth-of-type(1)
+            .WomenWord
+                p
+                    z-index: 50
+                    width: 500px
+                    position: absolute
+                    bottom: 50px
+        &:nth-of-type(1)
+            .s1Imaginaire
+                margin-right: 30px
+        &:nth-of-type(2)
+            .maCollection
+                img
+                    margin-top: 20px
+        &:nth-of-type(3)
+            .FashionBrandText
+                margin-top: 40px
+        &:nth-of-type(5)
+            display: flex
+            flex-wrap: wrap
+            .divCarouBtn
+                position: relative
+            #btnCarouselBefore
+                position: absolute
+                bottom: 0px
+                right: 0px
+                background-color: rgb(245,235,223)
+                i
+                    color: black
+            #btnCarouselAfter
+                position: absolute
+                bottom: 0px
+                right: 200px
+                background-color: rgb(245,235,223)
+                i
+                    color: black
+    footer
+        .divMedia
+            p
+                width: 10px
+        .rowImgFoot1
+            flex-wrap: wrap
+        .rowImgFoot2
+            flex-wrap: wrap
